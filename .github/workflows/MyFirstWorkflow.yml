@@ -168,3 +168,7 @@ jobs:
           echo "action_state=yellow" >> "$GITHUB_ENV"
       - run: |
           echo "${{ env.action_state }}" # This will output 'yellow'
+
+# you can enable debug logging by adding a variable ACTIONS_STEP_DEBUG to your repository
+# and setting the value to true. This will add a very verbose output to your workflow
+# log, and all debug messages from each action will be displayed
